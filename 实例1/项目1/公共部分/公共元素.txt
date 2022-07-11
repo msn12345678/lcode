@@ -1,0 +1,26 @@
+*** Settings ***
+Library           SeleniumLibrary
+Resource          公共元素.txt
+
+*** Keywords ***
+打开浏览器
+    [Arguments]    ${url}
+    ${executable_path}    set variable    C:\\Program Files\\Google\\Chrome\\Application\\chromedriver.exe
+    Open Browser    ${url}    chrome    executable_path=${executable_path}
+    Maximize Browser Window
+
+强制等待
+    sleep    2
+
+退出框架
+    unselect frame
+
+关闭浏览器
+    close browser
+
+进入框架
+    [Arguments]    ${frame_name}
+    select frame    ${frame_name} \
+
+隐式等待
+    set browser implicit wait    10

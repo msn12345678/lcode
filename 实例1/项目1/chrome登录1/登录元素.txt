@@ -1,0 +1,11 @@
+*** Keywords ***
+输入用户名
+    [Arguments]    ${username}
+    input text    name=username    ${username}
+
+输入密码
+    [Arguments]    ${password}
+    input text    name=password    ${password}
+
+点击登录按钮
+    click element    xpath=//*[@id="app"]/div/div[1]/div[2]/div[2]/form/button

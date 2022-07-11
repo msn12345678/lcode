@@ -1,0 +1,16 @@
+*** settings ***
+Resource          ../公共部分/公共数据.txt
+Resource          ../公共部分/公共元素.txt
+Resource          登录元素.txt
+
+*** Keywords ***
+登录流程
+    [Arguments]    ${u}=${url}    ${un}=${username}    ${pw}=${password}
+    打开浏览器    ${u}
+    强制等待
+    输入用户名    ${un}
+    强制等待
+    输入密码    ${pw}
+    强制等待
+    点击登录按钮
+    强制等待

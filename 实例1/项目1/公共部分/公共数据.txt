@@ -1,0 +1,4 @@
+*** Variables ***
+${username}       17365481751
+${password}       Msn1994@123
+${url}            http://hrpre.ddingddang.com/#/login
